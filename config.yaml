@@ -1,0 +1,19 @@
+# Altere aqui os caminhos dos arquivos que serão utilizados
+paths:
+  path: &base_path 'S:\Projects\Python\GKA\Sheets'
+  base: !join [*base_path, '\base.xlsm']
+  cadastro: !join [*base_path, '\Cadastro.xlsx']
+  gka_por_segmento: !join [*base_path, '\GKAs por segmento.xlsx']
+  lista_gka: !join [*base_path, '\Lista GKA.xlsx']
+  portfolio: !join [*base_path, '\portfolio.xlsx']
+  oem: !join [*base_path, "\\PBI OEM 11'2025.xlsx"]
+  sellin: !join [*base_path, "\\PBI Sell In 11'2025.xlsx"]
+  output_path: !join [*base_path, "\\"]
+
+# Altere aqui o nome do arquivo final (Não é necessário incluir safra, nem ano ou mês)
+outputs:
+    file_name: "Report GKA"
+  
+# Altere aqui as cores de Logs
+ui:
+  colors: ["red", "green", "blue"]
