@@ -33,7 +33,7 @@ def current_ano_safra(month=None) -> str:
     if month is None:
         month = datetime.now().month
 
-    if not 1>= month <= 12:
+    if not 1<= month <= 12:
         raise ValueError("O parâmetro 'month' deve estar entre 1 e 12.")
 
     if month == 4:
