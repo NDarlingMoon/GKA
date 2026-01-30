@@ -6,7 +6,9 @@ from rich.console import Console
 console = Console()
 
 def join_constructor(loader, node):
-    """Construtor YAML para concatenar strings (usado para montar caminhos)."""
+    """
+    Construtor YAML para concatenar strings (usado para montar caminhos).
+    """
     seq = loader.construct_sequence(node)
     return "".join([str(i) for i in seq])
 
